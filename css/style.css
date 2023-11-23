@@ -1,22 +1,71 @@
 @charset "UTF-8";
 
+body{
+     font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; 
+     font-size: 0.9rem;
+     line-height: 1.7;
+}
+
 ul{
     list-style: none;
 
 }
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.line {
+    margin: 0 1rem;
+    width: 4px;
+    background-color: #000;
+  }
+.sec_title{
+    text-align: center;
+}
+.fixed-bg {
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    max-width: 1000px;
+    padding: 90px 16px 150px 16px;
+    margin: 0 auto;
+  }
+
 
 #header {
-    height: 100vh;
-    background-image: url(../img/mainvisual.jpg);
-    background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/mainvisual.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 20px 40px;
+  position: relative;
 }
-#header nav{
+nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-#header ul{
+nav ul{
     display: flex;
+}
+nav li{
+    margin-left: 30px;
+}
+nav li a{
+    color: white;
+    font-weight: bold;
+    transition: all  0.3s ease;
+    filter: drop-shadow(1px 1px 2px #121212);
+}
+nav li a:hover{
+    color: #e03131;
 }
 
 
@@ -26,5 +75,55 @@ ul{
     top: 45%;
     left: 0;
     right: 0;
+}
+
+#header .main-title img{
     
+    width: 62vh;
+}
+
+/*
+menu
+*/
+#menu .sec_title{
+    width: 100vh;
+    background-image: url(../img/menu.jpg);
+    position: relative;
+}
+
+
+#about .container{
+    display: flex;
+}
+#about .menu_list{
+    width: 50%;
+    padding: 0 45px;
+}
+#about .list_title{
+    text-align: center;
+    margin-bottom: 70px;
+}
+#about ul {
+    display: flex;
+    /*
+    justify-content: space-between;
+    */
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+#about .menu_list dl{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#about .menu_list dt{
+    width: 85%;
+    margin-bottom: 25px;
+}
+#about .menu_list dd{
+    width: 15%;
+    margin-bottom: 25px;
+}
+#about .food_list{
+    margin-bottom: 55px;
 }
